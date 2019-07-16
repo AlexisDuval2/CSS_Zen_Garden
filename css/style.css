@@ -1,0 +1,416 @@
+/*
+------------------------------------------------------
+ B53 - Programmation en environnement graphique
+ TP1
+ Code par: Alexis Duval
+ 4 mars 2019
+------------------------------------------------------
+
+------------------------------------------------------
+ 1. Version mobile
+------------------------------------------------------*/
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: 'Segoe UI semibold';
+	background-color: white;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* J'ai décidé de mettre la foire aux questions accessible en tout temps */
+.zen-faq {
+	position: fixed;
+	top: 10px;
+	right: 14px;
+	background-color: rgba(1, 1, 1, 0.65);
+	border-style: solid;
+	border-bottom-width: 3px;
+	border-color: rgb(200, 73, 50);
+	padding-top: 2px;
+	padding-left: 17px;
+	padding-bottom: 5px;
+	padding-right: 13px;
+}
+
+.zen-faq a {
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: rgb(240, 190, 25);
+}
+
+a {
+	color: green;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 0.01px;
+	display: block;
+	border-style: dashed;
+	color: rgb(200, 73, 50);
+	background-image: url("../images/h1.png");
+	background-color: rgb(240, 190, 25);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position-x: calc((100vw - 275px) / 2 - 10px);
+	width: 250px;
+	height: 150px;
+	background-size: 275px auto;
+	margin-top: 10px;
+	margin-left: calc((100vw - 250px)/2 - 11px);
+}
+
+h2 {
+	font-size: 42px;
+	line-height: 35px;
+	font-weight: bold;
+	text-align: center;
+	color: green;
+	background-image: url("../images/bg.png");
+	background-repeat: no-repeat;
+	background-size: 200px auto;
+	background-position: -50px 60px;
+	height: 225px;
+	padding-right: 5%;
+	padding-bottom: 10px;
+	margin-top: 5px;
+}
+
+p,
+footer,
+.viewall a,
+.css-resources a,
+.zen-translations a {
+	font-size: 15px;
+	line-height: 17px;
+	text-align: justify;
+	margin-left: 2%;
+	margin-right: 4%;
+}
+
+p:nth-of-type(n+2) {
+	margin-top: 15px;
+}
+
+#zen-summary p {
+	margin-left: 150px;
+	margin-right: 10px;
+}
+
+#zen-summary p:first-of-type {
+	margin-top: -135px;
+}
+
+#zen-summary p:nth-of-type(2) {
+	font-size: 19px;
+	line-height: 21px;
+	text-align: center;
+	margin-top: 21px;
+}
+
+#zen-summary a {
+	font-size: 20px;
+}
+
+h3:first-of-type {
+	margin-top: 30px;
+}
+
+h3 {
+	font-size: 27px;
+	line-height: 27px;
+	color: rgb(200, 73, 50);
+	border-style: dashed;
+	border-left: none;
+	border-right: none;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	margin-top: 50px;
+	margin-left: 2%;
+	margin-bottom: 8px;
+	margin-right: 4%;
+}
+
+#zen-preamble p:not(:last-of-type),
+#zen-explanation p:nth-of-type(2),
+#zen-participation p:first-of-type,
+#zen-requirements p:nth-of-type(2),
+#design-selection,
+.next,
+.view-css,
+.zen-submit {
+	display: none;
+}
+
+#zen-participation {
+	padding-top: 100px;
+	background-image: url("../images/frites.png");
+	background-repeat: no-repeat;
+	background-position: calc(100vw - 120px) 0px;
+}
+
+#zen-requirements {
+	background-image: url("../images/boisson.png");
+	background-repeat: no-repeat;
+	background-position-x: calc((100vw - 85px) / 2 - 20px);
+	background-position-y: 0px;
+	background-size: 100px auto;
+	padding-top: 220px;
+	margin-top: 10px;
+}
+
+aside {
+	margin-bottom: 60px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100vw;
+	text-align: center;
+	background-color: rgb(240, 190, 25);
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-top: 60px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+footer a:nth-of-type(n+2) {
+	margin-left: 15px;
+}
+
+
+/*
+------------------------------------------------------
+ 2. Version mobile paysage
+------------------------------------------------------*/
+@media screen and (orientation:landscape)
+			  and (min-width:500px) {
+	h1 {
+		width: 400px;
+		height: 170px;
+		background-size: 455px 297px;
+		background-position-x: calc((100vw - 455px) / 2 - 10px);
+		background-position-y: -30px;
+		margin-left: calc((100vw - 400px)/2 - 11px);
+	}
+	#zen-summary p:first-of-type {
+		margin-left: 160px;
+		width: 300px;
+		text-align: justify;
+	}
+	#zen-summary p:nth-of-type(2) {
+		margin-left: 110px;
+	}
+	p:not(#zen-summary),
+	footer,
+	.viewall a,
+	.css-resources a,
+	.zen-translations a {
+		width: 425px;
+		margin-left: calc((100vw - 425px - 1%)/2);
+		margin-right: calc((100vw - 425px - 1%)/2);
+	}
+	h3 {
+		margin-left: calc((100vw - 425px - 1%)/2);
+	}
+	.zen-faq {
+		right: 5px;
+		background-color: greenyellow;
+		right: 20px;
+	}
+	.zen-faq a {
+		font-size: 25px;
+		font-weight: bold;
+		text-shadow: 4px 2px rgb(240, 190, 25);
+		letter-spacing: 7px;
+		color: black;
+	}
+}
+
+
+/*
+------------------------------------------------------
+ 3. Version pour tablettes et ordinteurs
+------------------------------------------------------*/
+@media screen and (min-width: 1135px) {
+	.zen-faq {
+		top: 35px;
+		right: 35px;
+	}
+	.zen-faq:hover {
+		background-color: rgb(240, 190, 25);
+		border-style: dashed;
+	}
+	.zen-faq a {
+		color: black;
+		font-size: 25px;
+	}
+	/* TOUTES LES SECTIONS H3 */
+	#zen-preamble,
+	#zen-explanation,
+	#zen-participation,
+	#zen-benefits,
+	#zen-requirements {
+		display: flex;
+		flex-direction: column;
+	}
+	#zen-preamble h3,
+	#zen-explanation h3,
+	#zen-participation h3,
+	#zen-benefits h3,
+	#zen-requirements h3 {
+		display: flex;
+	}
+	h3 {
+		width: 380px;
+		font-size: 27px;
+		line-height: 27px;
+		color: rgb(200, 73, 50);
+		border-style: dashed;
+		border-left: none;
+		border-right: none;
+		padding-top: 0px;
+		padding-bottom: 5px;
+	}
+	zen-preamble h3 {
+		margin-top: 30px;
+	}
+	.design-archives h3,
+	.zen-resources h3 {
+		margin-top: 50px;
+		margin-left: 2%;
+		margin-bottom: 8px;
+		margin-right: 4%;
+	}
+	#zen-preamble p:not(:last-of-type),
+	#zen-explanation p:nth-of-type(2),
+	#zen-participation p:first-of-type,
+	#zen-requirements p:nth-of-type(2),
+	.next,
+	.view-css,
+	.zen-submit {
+		display: block;
+		width: 350px;
+		margin: auto;
+	}
+	aside {
+		background-color: rgba(1, 1, 1, 0.3);
+		position: absolute;
+		top: 20px;
+		left: -100px;
+		width: 450px;
+		height: 575px;
+		text-align: right;
+	}
+	.select,
+	.design-archives,
+	.zen-resources {
+		margin: 0px;
+	}
+	#design-selection {
+		display: block;
+		width: 425px;
+	}
+	.viewall a,
+	.css-resources a,
+	.zen-translations a {
+		width: 500px;
+	}
+	#zen-summary,
+	#zen-summary a {
+		width: 20px;
+	}
+	footer {
+		width: 300px;
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		bottom: 20px;
+		left: calc(100% - 270px);
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	footer a:hover {
+		background-color: black;
+		color: greenyellow;
+		border-style: none;
+	}
+	footer a {
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 42px;
+		text-align: left;
+		margin-left: 15px;
+	}
+	h2 {
+		width: 350px;
+		height: 325px;
+		position: absolute;
+		left: calc((100vw - 350px) / 2);
+		padding: 0px;
+		margin: 0px;
+		background-repeat: no-repeat;
+		background-size: 200px auto;
+		background-position: left center;
+		margin-top: 5px;
+	}
+	.viewall a,
+	.css-resources a,
+	.zen-translations a {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	p:nth-of-type(n+2) {
+		margin-top: 0px;
+	}
+	#zen-summary {
+		width: 350px;
+		margin: auto;
+	}
+	#zen-summary p:first-of-type {
+		margin-top: 100px;
+		margin-left: 220px;
+		width: 200px;
+	}
+	#zen-summary p:nth-of-type(2) {
+		margin-top: 50px;
+	}
+	#zen-participation {
+		padding-top: 100px;
+		background-image: url("../images/frites.png");
+		background-repeat: no-repeat;
+		background-position: center top;
+	}
+	#zen-requirements {
+		background-image: url("../images/boisson.png");
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: 100px auto;
+		padding-top: 220px;
+		margin-top: 10px;
+	}
+	p:not(#zen-summary) {
+		width: 350px;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	a:hover {
+		border-style: dashed;
+		border-color: rgb(200, 73, 50);
+		color: black;
+		background-color: rgb(240, 190, 25);
+	}
+	.zen-faq a:hover {
+		border-style: none;
+	}
+}

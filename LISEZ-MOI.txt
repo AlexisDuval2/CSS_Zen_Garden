@@ -1,0 +1,89 @@
+﻿
+
+	+==============================================================+
+	| Alexis Duval						       |
+	| 4 mars 2019						       |
+	| Cours B53						       |
+	| Programmation en environnement graphique		       |
+	+==============================================================+
+
+
+			    >>>>>>>>>>>>>>>>>>>>>>>
+			       Travail présenté à
+				 Éric Labonté
+			    <<<<<<<<<<<<<<<<<<<<<<<
+
+
+--------------------------------
+ MON THÈME : Les hamburgers :)
+--------------------------------
+
+
+--------------------------
+ Positions des blocs div
+--------------------------
+> Finalement j'ai plutôt travaillé en utilisant une seule colonne.
+> J'ai commencé avec la version mobile, et j'ai ajouté des éléments
+à gauche et à droite graduellement.
+> Dans la version pour les ordinateurs de bureau, la majorité du contenu est
+au milieu de l'écran, avec un grand menu à gauche en "position absolute" et
+deux blocs à droite en "position fixed".
+> J'ai eu beaucoup de difficulté à sortir l'élément "FAQ" pour l'isoler du
+reste du contenu.
+> J'ai eu beaucoup de difficulté à faire des versions mobiles, car j'avais
+tendances à mettre des pixels partout, ce qui donnait de très mauvais
+résultats lorsque je changeais de téléphone...
+------------------------------------------------
+
+--------------------------------------
+ Description des éléments graphiques
+--------------------------------------
+> 1. Une bouteille de ketchup avec le titre h1 dessus
+--> explications:
+	-Je trouvais ça drôle de faire un visuel un peu comme un menu de
+	restaurant où les hamburgers sont bons.
+	-J'ai fait une courte recherche afin d'obtenir une image d'une
+	bouteille de ketchup qui avait une zone assez grande pour écrire
+	un peu de texte à la main.
+	-En utilisant gimp et en étant très minutieux, j'ai réussi à faire
+	une bouteille de ketchup personnalisée.
+
+> 2. Un hamburger
+--> explications:
+	-Il était essentiel de trouver une belle image de hamburger pour
+	bien communiquer l'idée derrière mon concept.
+	-J'ai utilisé l'outil "pipette" dans le logiciel Paint de Windows
+	pour obtenir des idées de couleurs pour mon projet.
+
+> 3. Des frites
+	-J'ai ajouté des frites pour donner un peu de punch à mon projet.
+
+> 4. Une boisson gazeuse
+	-J'ai ajouté une image d'une cannette de boisson gazeuse pour accompagner
+	le tout.
+------------------
+
+-----------------------------------------------------------
+ Propriété CSS3 qui n'a pas été vue dans le cadre du cour
+-----------------------------------------------------------
+> Je n'ai pas réussi à faire des animations, alors j'ai préféré mettre plus d'effort
+dans la mise en page et dans la créativité en général
+> J'étais un peu agacé par l'espace entre les lignes des paragraphes, alors j'ai cherché
+sur internet pour trouver une solution. J'ai découvert la propriété "line-height" qui
+permet de modifier l'espace entre les lignes d'un paragraphe.
+--------------------------------------------------------------
+
+
+===============================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
